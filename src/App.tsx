@@ -7,6 +7,7 @@ import Introduce from "./pages/introduce/Introduce";
 import Fare from "./pages/fare/Fare";
 import Event from "./pages/event/Event";
 import Discover from "./pages/discover/Discover";
+import History from "./pages/introduce/History";
 
 function App() {
   return (
@@ -15,10 +16,10 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/discover" element={<Discover />} />
         <Route path="/introduce" element={<Introduce />}>
-          {/* <Route path="history" element={<History />} />
-          <Route path="members" element={<Members />} />
+          {/* <Route path="members" element={<Members />} />
           <Route path="privacy-policy" element={<PrivacyPolicy />} /> */}
         </Route>
+        <Route path="/introduce/history" element={<History />} />
         <Route path="/fare" element={<Fare />} />
         <Route path="/event" element={<Event />} />
       </Routes>

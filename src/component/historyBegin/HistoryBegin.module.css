@@ -1,0 +1,22 @@
+.historyBegin {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+.header h1 {
+  color: var(--heading-text-color, #259e58);
+
+  /* Bangers/96px */
+  font-family: Bangers;
+  font-size: 96px;
+}
+.desc {
+  max-width: 973px;
+  color: var(--gray-gray-500, #666);
+
+  /* Nunito/18px/18px: Regular */
+  font-family: Nunito;
+  font-size: 18px;
+  line-height: 150%; /* 27px */
+}

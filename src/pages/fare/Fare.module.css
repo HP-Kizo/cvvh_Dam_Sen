@@ -1,0 +1,43 @@
+.fare {
+  width: 100%;
+  height: auto;
+  display: flex;
+  max-width: 1920px;
+  margin: 0px auto;
+  justify-content: center;
+  position: relative;
+}
+.contact {
+  position: absolute;
+  display: flex;
+  gap: 12px;
+  flex-direction: column;
+  position: absolute;
+  right: 48px;
+  top: calc(100vh - 240px);
+}
+.contact__item {
+  display: flex;
+  width: 64px;
+  height: 64px;
+  padding: 16px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 32px;
+  background: var(--White, #fff);
+  box-shadow: 3px 3px 12px 0px rgba(0, 0, 0, 0.23);
+}
+
+.wrap_content {
+  width: 100%;
+  background: var(--frame-background);
+  max-width: 1663px;
+  padding-top: 24px;
+}
+.content {
+  background: var(--White, #fff);
+  width: calc(100% - 48px);
+
+  padding: 72px;
+  margin: 0 auto;
+}

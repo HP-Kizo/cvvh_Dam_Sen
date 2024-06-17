@@ -1,0 +1,33 @@
+.milestones {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+}
+.content {
+  max-width: 1001px;
+  list-style: inside;
+  color: var(--gray-gray-500);
+  /* Nunito/18px/18px: Regular */
+  font-family: Nunito;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 27px */
+}
+.header h1 {
+  color: var(--pink-pink-500);
+
+  /* Bangers/50px */
+  font-family: Bangers;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.image img {
+  width: 100%;
+  max-height: 742px;
+  object-fit: cover;
+}

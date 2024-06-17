@@ -6,5 +6,15 @@
 }
 :root {
   --menu-bg-color: #259e58;
+  --green-green-500: #259e58;
+  --heading-text-color: #259e58;
+  --footer-background-color: #259e58;
+  --green-green-50: #eaf6ef;
+  --frame-background: #e6ffd2;
   --active-menuu-item: #005f33;
+  --pink-pink-500: #ec008c;
+  --pink-pink-50: #fee6f4;
+  --Pink: #ec008c;
+  --gray-gray-500: #666;
+  --gray-gray-400: #858585;
 }

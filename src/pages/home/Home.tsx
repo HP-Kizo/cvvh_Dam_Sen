@@ -7,7 +7,7 @@ interface HomeProps {}
 
 const Home: React.FC<HomeProps> = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
-  const onOpenChange = () => {
+  const onOpenChange = (): void => {
     setIsOpen(!isOpen);
   };
   return (

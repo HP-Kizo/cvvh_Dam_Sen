@@ -1,0 +1,155 @@
+.container {
+  margin-top: 84px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 36px;
+}
+.title {
+  color: var(--pink-pink-500);
+  /* Bangers/50px */
+  font-family: Bangers;
+  font-size: 50px;
+}
+.tickets {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(480px, 1fr));
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+.ticket {
+  width: 100%;
+  height: 370px;
+  background: url(https://www.figma.com/file/LzF2IIrcDoA7ppxBK5ldpT/image/1c080d498b2dcfeea34a854e83b2aed04f616f6a)
+    lightgray 50% / cover no-repeat;
+  background-color: var(--menu-bg-color);
+  border-radius: 24px 0px 24px 0px;
+  overflow: hidden;
+  display: flex;
+  gap: 42px;
+}
+.ticket:nth-child(2),
+.ticket:nth-child(3) {
+  background-color: var(--pink-pink-500);
+}
+.ticket__left {
+  flex: 1;
+  position: relative;
+}
+.circle {
+  width: calc(100% * 2);
+  padding-top: calc(100% * 2);
+  height: auto;
+  background: #c5e0cf;
+  position: absolute;
+  bottom: 45px;
+  right: 0%;
+  border-radius: 50%;
+}
+.ticket:nth-child(2) .circle,
+.ticket:nth-child(3) .circle {
+  background: #efcfe0;
+}
+.ticket__right {
+  flex: 1.53;
+}
+.ticketTitle {
+  color: var(--White, #fff);
+  font-family: Bangers;
+  font-size: 40px;
+  margin-top: 55px;
+}
+.price {
+  color: var(--White, #fff);
+  font-family: Nunito;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 150%; /* 48px */
+  margin-top: 5px;
+}
+.description {
+  color: var(--White, #fff);
+
+  /* Nunito/16px/16px: Regular */
+  font-family: Nunito;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%; /* 24px */
+  max-width: 365px;
+  height: 96px;
+  margin-top: 11px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+  max-height: 96px;
+}
+.button:hover {
+  cursor: pointer;
+}
+.button:hover {
+  background: var(--green-green-50);
+}
+.ticket:nth-child(2) .button:hover,
+.ticket:nth-child(3) .button:hover {
+  background: var(--pink-pink-50);
+}
+.button {
+  margin-top: 38px;
+  display: inline-flex;
+  padding: 10px 12px 10px 16px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  background: var(--White, #fff);
+  color: var(--green-green-500);
+  text-align: center;
+
+  /* Nunito/18px/18px: Bold */
+  font-family: Nunito;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 150%; /* 27px */
+}
+.ticket:nth-child(2) .button,
+.ticket:nth-child(3) .button {
+  color: var(--pink-pink-500);
+}
+.ticket:nth-child(2) .button path,
+.ticket:nth-child(3) .button path {
+  fill: var(--pink-pink-500);
+  stroke: var(--pink-pink-500);
+}
+.note h2 {
+  color: var(--pink-pink-500);
+
+  /* Nunito/23px/23px: Bold */
+  font-family: Nunito;
+  font-size: 23px;
+  font-weight: 800;
+}
+.note ul {
+  list-style: inside;
+  color: var(--gray-gray-400, #858585);
+
+  /* Nunito/18px/18px: Regular */
+  font-family: Nunito;
+  font-size: 18px;
+  line-height: 150%;
+}
+.note li {
+  padding-left: 16px;
+}
+.note span {
+  color: var(--gray-gray-500, #666);
+
+  /* Nunito/18px/18px: SemiBold */
+  font-family: Nunito;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 150%; /* 27px */
+}
