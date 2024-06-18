@@ -7,6 +7,7 @@ import Background from "../../component/background/Background";
 import { BackgroundProps } from "../../context/interface";
 import HistoryBegin from "../../component/historyBegin/HistoryBegin";
 import Milestones from "../../component/milestones/Milestones";
+import CentralService from "../../component/centralService/CentralService";
 interface HistoryProps {}
 
 const History: React.FC<HistoryProps> = () => {
@@ -31,6 +32,7 @@ const History: React.FC<HistoryProps> = () => {
           <Background image={data.image} alt={data.alt}></Background>
           <HistoryBegin></HistoryBegin>
           <Milestones></Milestones>
+          <CentralService></CentralService>
         </div>
         <Footer></Footer>
       </div>
