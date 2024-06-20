@@ -1,0 +1,119 @@
+.recommendedCarousel {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.navigate {
+  display: flex;
+  justify-content: space-between;
+}
+.btn {
+  background-color: transparent;
+  border: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+.btn p {
+  color: var(--pink-pink-500);
+  /* Nunito/20px/20px: SemiBold */
+  font-family: Nunito;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 150%; /* 30px */
+}
+.wrap__carousel {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+.carousel {
+  position: relative;
+  width: 100%;
+}
+
+.header {
+  color: var(--heading-text-color, #259e58);
+  /* Bangers/32px */
+  font-family: Bangers;
+  font-size: 32px;
+}
+
+.itemsContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  gap: 24px;
+}
+.carousel button {
+  border: 0;
+  background-color: transparent;
+}
+.carousel button:hover {
+  cursor: pointer;
+}
+.prevButton svg,
+.nextButton svg {
+  width: 48px;
+  height: 48px;
+}
+.item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.image {
+  width: 100%;
+  height: 240px;
+}
+.info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.title {
+  color: var(--heading-text-color, #259e58);
+  /* Nunito/20px/20px: Bold */
+  font-family: Nunito;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 150%; /* 30px */
+}
+.date {
+  color: var(--gray-gray-600, #4d4d4d);
+  /* Nunito/16px/16px: Regular */
+  font-family: Nunito;
+  font-size: 16px;
+  line-height: 150%; /* 24px */
+}
+.item__bottom {
+  display: flex;
+  gap: 4px;
+  color: var(--Pink);
+
+  /* Nunito/16px/16px: SemiBold */
+  font-family: Nunito;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 24px */
+}
+.prevButton {
+  position: absolute;
+  left: -8px;
+  top: 154px;
+  transform: translate(-100%, -100%);
+}
+.nextButton {
+  position: absolute;
+  right: -8px;
+  top: 154px;
+  transform: translate(100%, -100%);
+}

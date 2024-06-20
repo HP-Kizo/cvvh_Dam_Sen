@@ -1,0 +1,134 @@
+.plants {
+  width: 100%;
+  height: auto;
+  display: flex;
+  max-width: 1920px;
+  margin: 0px auto;
+  justify-content: center;
+  position: relative;
+}
+.contact {
+  position: absolute;
+  display: flex;
+  gap: 12px;
+  flex-direction: column;
+  position: absolute;
+  right: 48px;
+  top: calc(100vh - 240px);
+}
+
+.wrap_content {
+  width: 100%;
+  background: var(--frame-background);
+  max-width: 1663px;
+  padding-top: 24px;
+}
+.content {
+  background: var(--White, #fff);
+  width: calc(100% - 48px);
+  padding: 72px;
+  margin: 0 auto;
+}
+.introduce {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.header {
+  position: relative;
+}
+.header_content {
+  position: absolute;
+  bottom: 40px;
+  z-index: 2;
+  left: 30px;
+  display: flex;
+  flex-direction: column;
+}
+.header_content h1 {
+  color: #fff;
+  font-family: Quicksand;
+  font-size: 48px;
+  font-weight: 700;
+}
+.underline {
+  margin-top: 8px;
+  width: 89px;
+  height: 2px;
+  background: #fff;
+}
+
+.header_content .desc {
+  margin-top: 20px;
+  color: #fff;
+  max-width: 629px;
+  /* Nunito/18px/18px: Regular */
+  font-family: Nunito;
+  font-size: 18px;
+  line-height: 150%; /* 27px */
+}
+.wrap_category {
+  margin-top: 8px;
+  display: flex;
+  gap: 16px;
+}
+.wrap_category div {
+  display: flex;
+  gap: 4px;
+}
+.detail {
+  max-width: 163px;
+  display: inline-flex;
+  padding: 10px 16px;
+  align-items: center;
+  background-color: transparent;
+  gap: 10px;
+  border: 0;
+  outline: 0;
+  border-radius: 8px;
+  background: var(--green-green-500, #259e58);
+  margin-top: 24px;
+}
+.detail p {
+  color: var(--White, #fff);
+  text-align: center;
+  font-family: Quicksand;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.detail path {
+  stroke: #fff;
+  fill: #fff;
+}
+.category h3 {
+  color: #fff;
+  /* Nunito/16px/16px: SemiBold */
+  font-family: Nunito;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 150%; /* 24px */
+}
+.date p {
+  color: var(--White, #fff);
+
+  /* Nunito/16px/16px: Regular */
+  font-family: Nunito;
+  font-size: 16px;
+  line-height: 150%; /* 24px */
+}
+.category path {
+  fill: #ffffff;
+  stroke: #ffffff;
+}
+.image {
+  width: 100%;
+  max-height: 50vh;
+  overflow: hidden;
+}
+.image img {
+  width: 100%;
+  object-fit: cover;
+  transform: translateY(-30%);
+}

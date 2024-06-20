@@ -1,0 +1,37 @@
+.posts {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.title {
+  color: var(--pink-pink-500, #ec008c);
+  /* Bangers/50px */
+  font-family: Bangers;
+  font-size: 50px;
+}
+.desc {
+  max-width: 981px;
+  color: var(--gray-gray-500);
+  /* Nunito/18px/18px: Regular */
+  font-family: Nunito;
+  font-size: 18px;
+  line-height: 150%; /* 27px */
+}
+.header,
+.posts__content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.title {
+  color: var(--pink-pink-500);
+  /* Bangers/50px */
+  font-family: Bangers;
+  font-size: 50px;
+}
+.wrap__images {
+  display: flex;
+  align-items: stretch;
+  gap: 8px;
+  width: 100%;
+}

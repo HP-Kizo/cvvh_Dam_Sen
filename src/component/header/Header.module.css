@@ -1,0 +1,35 @@
+.introduce__header h1 {
+  display: inline-block;
+  color: var(--heading-text-color, #259e58);
+  font-family: Bangers;
+  font-size: 96px;
+  text-transform: uppercase;
+  padding-bottom: 8px;
+  border-bottom: 5px solid #259e58;
+}
+.wrap_category {
+  margin-top: 8px;
+  display: flex;
+  gap: 16px;
+}
+.wrap_category div {
+  display: flex;
+  gap: 4px;
+}
+.category h3 {
+  color: var(--pink-pink-500);
+
+  /* Nunito/16px/16px: SemiBold */
+  font-family: Nunito;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 150%; /* 24px */
+}
+.date p {
+  color: var(--gray-gray-500);
+
+  /* Nunito/16px/16px: Regular */
+  font-family: Nunito;
+  font-size: 16px;
+  line-height: 150%; /* 24px */
+}

@@ -4,6 +4,8 @@
   flex-direction: column;
   gap: 24px;
   width: 100%;
+  padding-bottom: 80px;
+  border-bottom: 1px solid #a8d8bc;
 }
 .content {
   max-width: 1001px;
@@ -22,7 +24,6 @@
   /* Bangers/50px */
   font-family: Bangers;
   font-size: 50px;
-
 }
 .image img {
   width: 100%;

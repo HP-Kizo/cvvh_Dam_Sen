@@ -8,6 +8,10 @@ import Fare from "./pages/fare/Fare";
 import Event from "./pages/event/Event";
 import Discover from "./pages/discover/Discover";
 import History from "./pages/introduce/History";
+import AcrobaticCarp from "./pages/discover/AcrobaticCarp";
+import LongTailedMonkey from "./pages/discover/LongTailedMonkey";
+import HungKingSquare from "./pages/discover/HungKingSquare";
+import Plants from "./pages/discover/Plants";
 
 function App() {
   return (
@@ -15,6 +19,14 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/discover" element={<Discover />} />
+        <Route path="/discover/acrobatic-carp" element={<AcrobaticCarp />} />
+        <Route path="/discover/plants" element={<Plants />} />
+        <Route
+          path="/discover/long-tailed-monkey"
+          element={<LongTailedMonkey />}
+        />
+        <Route path="/discover/Hung-king-square" element={<HungKingSquare />} />
+
         <Route path="/introduce" element={<Introduce />}>
           {/* <Route path="members" element={<Members />} />
           <Route path="privacy-policy" element={<PrivacyPolicy />} /> */}
