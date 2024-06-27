@@ -10,7 +10,7 @@ import {
 } from "../../assets/Icon";
 interface SildesProps {}
 
-const Sildes: React.FC<SildesProps> = () => {
+const Slides: React.FC<SildesProps> = () => {
   const [currentSlide, setCurrentSlide] = useState<number>(0);
   const slides: string[] = [
     "https://www.figma.com/file/LzF2IIrcDoA7ppxBK5ldpT/image/b68e58acf455e3b824b3bf2428e17de38be33daa",
@@ -76,4 +76,4 @@ const Sildes: React.FC<SildesProps> = () => {
   );
 };
 
-export default Sildes;
+export default Slides;

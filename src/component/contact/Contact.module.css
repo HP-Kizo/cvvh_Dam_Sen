@@ -1,0 +1,21 @@
+.contact {
+  z-index: 1;
+  position: absolute;
+  display: flex;
+  gap: 12px;
+  flex-direction: column;
+  position: absolute;
+  right: 48px;
+  top: calc(100vh - 240px);
+}
+.contact__item {
+  display: flex;
+  width: 64px;
+  height: 64px;
+  padding: 16px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 32px;
+  background: var(--White, #fff);
+  box-shadow: 3px 3px 12px 0px rgba(0, 0, 0, 0.23);
+}

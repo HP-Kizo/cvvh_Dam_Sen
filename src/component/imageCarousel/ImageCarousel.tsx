@@ -1,5 +1,6 @@
 // src/components/ImageCarousel.tsx
 import React, { useState } from "react";
+import Slider from "react-slick";
 import styles from "./ImageCarousel.module.css";
 import { CarouselItem, ImageData } from "../../context/interface";
 import { NextIconL, PrevIconL } from "../../assets/Icon";
@@ -45,7 +46,13 @@ const ImageCarousel: React.FC<CarouselItem> = ({ title, desc, slides }) => {
 
     return `translateX(${translateValue}%)`;
   };
-
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+  };
   return (
     <div className={styles.wrap__carousel}>
       {(title || desc) && (

@@ -8,6 +8,7 @@ import { BackgroundProps } from "../../context/interface";
 import HistoryBegin from "../../component/historyBegin/HistoryBegin";
 import Milestones from "../../component/milestones/Milestones";
 import CentralService from "../../component/centralService/CentralService";
+import Contact from "../../component/contact/Contact";
 interface HistoryProps {}
 
 const History: React.FC<HistoryProps> = () => {
@@ -22,10 +23,7 @@ const History: React.FC<HistoryProps> = () => {
   };
   return (
     <div className={styles.history}>
-      <div className={styles.contact}>
-        <div className={styles.contact__item}>{CallIcon}</div>
-        <div className={styles.contact__item}>{Message}</div>
-      </div>
+      <Contact></Contact>
       <Navbar isOpen={isOpen} onOpenChange={onOpenChange}></Navbar>
       <div className={styles.wrap_content}>
         <div className={styles.content}>

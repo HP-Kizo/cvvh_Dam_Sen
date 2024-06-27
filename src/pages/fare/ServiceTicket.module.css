@@ -1,0 +1,49 @@
+.serviceTicket {
+  width: 100%;
+  height: auto;
+  display: flex;
+  max-width: 1920px;
+  margin: 0px auto;
+  justify-content: center;
+  position: relative;
+}
+.contact {
+  position: absolute;
+  display: flex;
+  gap: 12px;
+  flex-direction: column;
+  position: absolute;
+  right: 48px;
+  top: calc(100vh - 240px);
+}
+
+.wrap_content {
+  width: 100%;
+  background: var(--frame-background);
+  max-width: 1663px;
+  padding-top: 24px;
+}
+.content {
+  background: var(--White, #fff);
+  width: calc(100% - 48px);
+  padding: 72px;
+  margin: 0 auto;
+}
+.introduce {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 88px;
+}
+.desc {
+  max-width: 804px;
+  color: var(--gray-gray-500);
+  /* Nunito/18px/18px: Regular */
+  font-family: Nunito;
+  font-size: 18px;
+  line-height: 150%; /* 27px */
+}
+.main {
+  display: flex;
+  flex-direction: column;
+}

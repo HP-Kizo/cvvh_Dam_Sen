@@ -6,6 +6,7 @@ import Footer from "../../component/footer/Footer";
 import { CallIcon, Message } from "../../assets/Icon";
 import { BackgroundProps } from "../../context/interface";
 import Background from "../../component/background/Background";
+import Contact from "../../component/contact/Contact";
 
 interface FareProps {}
 
@@ -21,10 +22,7 @@ const Fare: React.FC<FareProps> = () => {
   };
   return (
     <div className={styles.fare}>
-      <div className={styles.contact}>
-        <div className={styles.contact__item}>{CallIcon}</div>
-        <div className={styles.contact__item}>{Message}</div>
-      </div>
+      <Contact></Contact>
       <Navbar isOpen={isOpen} onOpenChange={onOpenChange}></Navbar>
       <div className={styles.wrap_content}>
         <div className={styles.content}>

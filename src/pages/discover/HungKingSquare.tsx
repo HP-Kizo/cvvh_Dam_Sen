@@ -17,6 +17,7 @@ import {
 import { title } from "process";
 import ImageCarousel from "../../component/imageCarousel/ImageCarousel";
 import RecommendedCarousel from "../../component/recommendedItems/RecommendedCarousel";
+import Contact from "../../component/contact/Contact";
 
 const HungKingSquare: React.FC = () => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -329,10 +330,7 @@ const HungKingSquare: React.FC = () => {
   ];
   return (
     <div className={styles.HungKingSquare}>
-      <div className={styles.contact}>
-        <div className={styles.contact__item}>{CallIcon}</div>
-        <div className={styles.contact__item}>{Message}</div>
-      </div>
+      <Contact></Contact>
       <Navbar isOpen={isOpen} onOpenChange={onOpenChange} />
       <div className={styles.wrap_content}>
         <div className={styles.content}>

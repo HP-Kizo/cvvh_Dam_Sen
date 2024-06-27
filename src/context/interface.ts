@@ -65,3 +65,11 @@ export interface CarouselItem {
   desc?: string[];
   slides: Slide[];
 }
+export interface Event {
+  title: string;
+  date: string;
+  description: string;
+  imageUrl: string;
+  category: string;
+  link: string;
+}

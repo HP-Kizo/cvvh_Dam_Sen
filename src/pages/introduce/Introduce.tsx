@@ -5,7 +5,7 @@ import styles from "./Introduce.module.css";
 import AttractionHighlight from "../../component/attractionHighlight/AttractionHighlight";
 import OperatingTime from "../../component/operatingTime/OperatingTime";
 import TicketPricing from "../../component/ticketPricing/TicketPricing";
-
+import Navigate from "../../component/navigate/Navigate";
 interface IntroduceProps {}
 
 const Introduce: React.FC<IntroduceProps> = () => {
@@ -20,25 +20,29 @@ const Introduce: React.FC<IntroduceProps> = () => {
     <>
       <div className={styles.introduce}>
         <Navbar isOpen={isOpen} onOpenChange={onOpenChange}></Navbar>
-        <div className={styles.wrap_content}>
-          <div className={styles.content}>
-            <div className={styles.background}>
-              <img
-                className={styles.image}
-                src={image.url}
-                alt="Công viên Văn Hóa Đầm Sen với hơn 30 trò chơi, địa điểm check in và nhiều loại thú quý hiếm"
-              />
-              <p className={styles.desc}>
-                Công viên Văn Hóa Đầm Sen với hơn 30 trò chơi, địa điểm check in
-                và nhiều loại thú quý hiếm
-              </p>
+        {!isOpen ? (
+          <div className={styles.wrap_content}>
+            <div className={styles.content}>
+              <div className={styles.background}>
+                <img
+                  className={styles.image}
+                  src={image.url}
+                  alt="Công viên Văn Hóa Đầm Sen với hơn 30 trò chơi, địa điểm check in và nhiều loại thú quý hiếm"
+                />
+                <p className={styles.desc}>
+                  Công viên Văn Hóa Đầm Sen với hơn 30 trò chơi, địa điểm check
+                  in và nhiều loại thú quý hiếm
+                </p>
+              </div>
+              <AttractionHighlight></AttractionHighlight>
+              <OperatingTime></OperatingTime>
+              <TicketPricing></TicketPricing>
             </div>
-            <AttractionHighlight></AttractionHighlight>
-            <OperatingTime></OperatingTime>
-            <TicketPricing></TicketPricing>
+            <Footer></Footer>
           </div>
-          <Footer></Footer>
-        </div>
+        ) : (
+          <Navigate></Navigate>
+        )}
       </div>
     </>
   );

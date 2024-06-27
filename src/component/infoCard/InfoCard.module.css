@@ -1,0 +1,45 @@
+.infoCard {
+  display: flex;
+  width: 356px;
+  height: 441px;
+  flex-direction: column;
+  align-items: center;
+  gap: 45px;
+  border-radius: 24px;
+  border: 5.098px solid;
+  background: var(--White, #fff);
+  box-shadow: 0px 5.098px 10.197px 0px rgba(0, 0, 0, 0.2);
+  padding: 38px 30px 0px 38px;
+}
+.icon {
+  width: 225.598px;
+  height: 152.948px;
+  flex-shrink: 0;
+  border-radius: 0px 0px 22.942px 22.942px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.title {
+  text-align: center;
+  font-family: Nunito;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 120%; /* 48px */
+}
+.description {
+  color: var(--gray-gray-500);
+  text-align: center;
+  /* Nunito/23px/23px: Medium */
+  font-family: Nunito;
+  font-size: 23px;
+  font-weight: 500;
+  line-height: 120%; /* 27.6px */
+}

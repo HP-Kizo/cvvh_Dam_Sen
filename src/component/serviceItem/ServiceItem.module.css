@@ -1,0 +1,98 @@
+.serviceItem {
+}
+.title {
+  color: var(--pink-pink-500);
+  /* Bangers/50px */
+  font-family: Bangers;
+  font-size: 50px;
+}
+.notice {
+  color: #dfa100;
+  /* Nunito/18px/18px: SemiBold */
+  font-family: Nunito;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 150%; /* 27px */
+}
+.desc {
+  max-width: 1196px;
+  color: var(--gray-gray-500);
+  /* Nunito/18px/18px: Regular */
+  font-family: Nunito;
+  font-size: 18px;
+  line-height: 150%; /* 27px */
+}
+.desc span {
+  color: var(--blue);
+  /* Nunito/18px/18px: Regular */
+  font-family: Nunito;
+  font-size: 18px;
+  line-height: 150%;
+  text-decoration-line: underline;
+}
+.table tr {
+  display: flex;
+}
+.table th {
+  color: var(--gray-gray-500);
+  /* Nunito/20px/20px: SemiBold */
+  font-family: Nunito;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 150%; /* 30px */
+  display: flex;
+  height: 40px;
+  padding: 10px 0px;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+  width: 187px;
+}
+.table td {
+  color: var(--gray-gray-500);
+  /* Nunito/18px/18px: Regular */
+  font-family: Nunito;
+  font-size: 18px;
+  line-height: 150%; /* 27px */
+  display: flex;
+  height: 40px;
+  padding: 10px 0px;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+}
+.note {
+  margin-top: 24px;
+}
+.note h3 {
+  color: var(--Pink);
+  /* Nunito/23px/23px: Bold */
+  font-family: Nunito;
+  font-size: 23px;
+  font-weight: 800;
+}
+.note p {
+  color: var(--gray-gray-500);
+  /* Nunito/18px/18px: Regular */
+  font-family: Nunito;
+  font-size: 18px;
+  line-height: 150%; /* 27px */
+  display: inline;
+}
+.note a {
+  color: var(--blue);
+  font-family: Nunito;
+  font-size: 18px;
+  line-height: 150%; /* 27px */
+  text-decoration-line: underline;
+}
+.notice {
+  margin-top: 12px;
+  margin-bottom: 24px;
+}
+.desc {
+  margin-bottom: 21px;
+}
+.title {
+  margin-top: 40px;
+}

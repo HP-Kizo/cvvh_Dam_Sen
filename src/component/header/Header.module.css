@@ -1,11 +1,12 @@
 .introduce__header h1 {
   display: inline-block;
-  color: var(--heading-text-color, #259e58);
+  color: var(--heading-text-color);
   font-family: Bangers;
   font-size: 96px;
   text-transform: uppercase;
   padding-bottom: 8px;
   border-bottom: 5px solid #259e58;
+  max-width: 685px;
 }
 .wrap_category {
   margin-top: 8px;

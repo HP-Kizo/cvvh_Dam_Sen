@@ -1,82 +1,105 @@
 .card {
   background: var(--White, #fff);
   box-shadow: 0px 2px 22px 0px rgba(0, 0, 0, 0.16);
-  overflow: hidden;
-  max-width: 350px;
   display: flex;
   flex-direction: column;
 }
-
 .image {
   height: 250px;
-  width: 100%;
   object-fit: cover;
+  width: auto;
 }
-
-.info {
+.content {
   padding: 12px 16px;
   display: flex;
   flex-direction: column;
-  gap: 33px;
 }
-.content {
-  display: flex;
-  flex-direction: column;
-}
-.info h3 {
+.title {
   color: var(--heading-text-color);
   /* Nunito/20px/20px: Bold */
   font-family: Nunito;
   font-size: 20px;
   font-weight: 800;
   line-height: 150%; /* 30px */
-}
+  height: 60px;
 
-.info p {
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+.description {
   overflow: hidden;
   color: var(--gray-gray-500);
   /* Nunito/16px/16px: Regular */
   font-family: Nunito;
   font-size: 16px;
   line-height: 150%; /* 24px */
+  height: 72px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
 }
 .bottom {
   display: flex;
   justify-content: space-between;
 }
-.category,
-.date {
-  display: flex;
-  gap: 4px;
-  align-items: center;
+.info {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
-.category h3 {
+.category {
   color: var(--Pink);
   /* Nunito/16px/16px: SemiBold */
   font-family: Nunito;
   font-size: 16px;
   font-weight: 700;
   line-height: 150%; /* 24px */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
 }
-.detail {
+.category svg {
+  width: 20px;
+  height: 20px;
+}
+
+.date {
+  color: var(--gray-gray-500);
+  /* Nunito/16px/16px: Regular */
+  font-family: Nunito;
+  font-size: 16px;
+  line-height: 150%; /* 24px */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.link {
   display: inline-flex;
   padding: 10px 8px 10px 12px;
   align-items: center;
   gap: 8px;
   border-radius: 8px;
   background: var(--green-green-500);
-}
-.detail p {
-  color: #fff;
+  color: var(--White, #fff);
   text-align: center;
   font-family: Nunito;
   font-size: 16px;
   font-weight: 700;
 }
-.detail path {
+.link svg {
+  width: 20px;
+  height: 20px;
+}
+.link path {
   fill: #fff;
   stroke: #fff;
+}
+.link:hover {
+  cursor: pointer;
 }

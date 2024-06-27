@@ -1,62 +1,63 @@
-import { NavLink } from "react-router-dom";
+import React, { useState } from "react";
 import styles from "./Navigate.module.css";
+import CategoryList from "../categoryList/CategoryList";
+import { categories } from "../../context/mockData";
+
 interface NavigateProps {}
 
 const Navigate: React.FC<NavigateProps> = () => {
+  const [currentCategory, setCurrentCategory] = useState<string>("games");
+
+  const getNavItemClass = (category: string) => {
+    return `${styles.nav_item} ${
+      currentCategory === category ? styles.active : ""
+    }`;
+  };
+
   return (
     <div className={styles.navigate}>
       <div className={styles.wrap__nav}>
         <ul className={styles.nav__list}>
-          <li className={styles.nav_item}>
-            <NavLink
-              to="/"
-              className={({ isActive }) => (isActive ? styles.active : "")}
-            >
-              TRÒ CHƠI
-            </NavLink>
+          <li
+            className={getNavItemClass("games")}
+            onClick={() => setCurrentCategory("games")}
+          >
+            TRÒ CHƠI
           </li>
-          <li className={styles.nav_item}>
-            <NavLink
-              to="/"
-              className={({ isActive }) => (isActive ? styles.active : "")}
-            >
-              VƯỜN THÚ
-            </NavLink>
+          <li
+            className={getNavItemClass("zoo")}
+            onClick={() => setCurrentCategory("zoo")}
+          >
+            VƯỜN THÚ
           </li>
-          <li className={styles.nav_item}>
-            <NavLink
-              to="/"
-              className={({ isActive }) => (isActive ? styles.active : "")}
-            >
-              cẢNH ĐẸP
-            </NavLink>
+          <li
+            className={getNavItemClass("scenery")}
+            onClick={() => setCurrentCategory("scenery")}
+          >
+            CẢNH ĐẸP
           </li>
-          <li className={styles.nav_item}>
-            <NavLink
-              to="/"
-              className={({ isActive }) => (isActive ? styles.active : "")}
-            >
-              SÂN KHẤU
-            </NavLink>
+          <li
+            className={getNavItemClass("stage")}
+            onClick={() => setCurrentCategory("stage")}
+          >
+            SÂN KHẤU
           </li>
-          <li className={styles.nav_item}>
-            <NavLink
-              to="/"
-              className={({ isActive }) => (isActive ? styles.active : "")}
-            >
-              GIÁO DỤC TRẢI NGHIỆM
-            </NavLink>
+          <li
+            className={getNavItemClass("education")}
+            onClick={() => setCurrentCategory("education")}
+          >
+            GIÁO DỤC TRẢI NGHIỆM
           </li>
-          <li className={styles.nav_item}>
-            <NavLink
-              to="/"
-              className={({ isActive }) => (isActive ? styles.active : "")}
-            >
-              ẨM THỰC
-            </NavLink>
+          <li
+            className={getNavItemClass("food")}
+            onClick={() => setCurrentCategory("food")}
+          >
+            ẨM THỰC
           </li>
         </ul>
-        <div className={styles.nav__content}></div>
+        <div className={styles.nav__content}>
+          <CategoryList categories={categories[currentCategory]} />
+        </div>
       </div>
     </div>
   );

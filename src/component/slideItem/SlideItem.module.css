@@ -1,0 +1,9 @@
+.slideItem {
+  width: 100%;
+}
+.image {
+  width: 100%;
+  max-height: 544px;
+  object-fit: cover;
+  border-radius: 40px;
+}

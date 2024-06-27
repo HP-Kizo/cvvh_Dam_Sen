@@ -22,6 +22,7 @@ import Header from "../../component/header/Header";
 import styles from "./Plants.module.css";
 import { title } from "process";
 import PlantList from "../../component/PlantList/PlantList";
+import Contact from "../../component/contact/Contact";
 interface PlantsProps {}
 
 const Plants: React.FC<PlantsProps> = () => {
@@ -86,10 +87,7 @@ const Plants: React.FC<PlantsProps> = () => {
   };
   return (
     <div className={styles.plants}>
-      <div className={styles.contact}>
-        <div className={styles.contact__item}>{CallIcon}</div>
-        <div className={styles.contact__item}>{Message}</div>
-      </div>
+      <Contact></Contact>
       <Navbar isOpen={isOpen} onOpenChange={onOpenChange}></Navbar>
       <div className={styles.wrap_content}>
         <div className={styles.content}>

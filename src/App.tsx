@@ -12,6 +12,12 @@ import AcrobaticCarp from "./pages/discover/AcrobaticCarp";
 import LongTailedMonkey from "./pages/discover/LongTailedMonkey";
 import HungKingSquare from "./pages/discover/HungKingSquare";
 import Plants from "./pages/discover/Plants";
+import GymTickets from "./pages/fare/GymTickets";
+import Member from "./pages/introduce/Member";
+import PrivacyPolicy from "./pages/introduce/PrivacyPolicy";
+import ServiceTicket from "./pages/fare/ServiceTicket";
+import GroupTicket from "./pages/fare/GroupTicket";
+import WaterShow from "./pages/event/WaterShow";
 
 function App() {
   return (
@@ -32,8 +38,16 @@ function App() {
           <Route path="privacy-policy" element={<PrivacyPolicy />} /> */}
         </Route>
         <Route path="/introduce/history" element={<History />} />
+        <Route path="/introduce/member" element={<Member />} />
+        <Route path="/introduce/privacy-policy" element={<PrivacyPolicy />} />
+
         <Route path="/fare" element={<Fare />} />
+        <Route path="/fare/gym-stickets" element={<GymTickets />} />
+        <Route path="/fare/service-ticket" element={<ServiceTicket />} />
+        <Route path="/fare/group-ticket" element={<GroupTicket />} />
+
         <Route path="/event" element={<Event />} />
+        <Route path="/event/water-show" element={<WaterShow />} />
       </Routes>
     </BrowserRouter>
   );
